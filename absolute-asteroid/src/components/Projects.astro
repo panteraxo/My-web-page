@@ -9,6 +9,7 @@ import MySQL from "./icons/MySQL.astro"
 import React from "./icons/React.astro"
 import Csharp from "./icons/Csharp.astro"
 import Node from "./icons/Node.astro"
+import TypeScript from "./icons/TypeScript.astro"
 
 const TAGS = {
   NEXT: {
@@ -46,25 +47,29 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Node,
   },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#003159] text-white",
+    icon: TypeScript,
+  },
 
 }
 const PROJECTS = [
   {
     title: "Aplicacion de notas web",
     description:
-      "Proyecto de block de notas, se creo este block de notas con con React para el frontend,Tailwind, y , C# y MySQL para el backend , donde se realizaron apis para la interaccion con el frontend ",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+      "Proyecto de block de notas, se creo este block de notas con con React para el frontend,Tailwind, y , C# y MySQL para el backend , donde se realizaron apis para la interaccion con el frontend. ",
+    
     image: "../../public/357shots_so.png",
-    tags: [TAGS.CSHARP,TAGS.JAVASCRIPT,TAGS.MYSQL, TAGS.TAILWIND],
+    tags: [TAGS.CSHARP,TAGS.JAVASCRIPT,TAGS.MYSQL,TAGS.REACT, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Servicio web para el control de maquinas expendedoras",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+      "Este servicio para el control de maquinas expendedoras y cambio de dinero, su principal funcion del servicio es mantener un control, mantenimiento y brindar reportes de lo que se realice. ",
+    
     image: "../../public/449shots_so.png",
-    tags: [TAGS.TAILWIND,TAGS.MYSQL,TAGS.JAVASCRIPT,TAGS.NODE,TAGS.REACT],
+    tags: [TAGS.TAILWIND,TAGS.MYSQL,TAGS.JAVASCRIPT,TAGS.NODE,TAGS.REACT,TAGS.TYPESCRIPT],
   },
 ]
 ---
@@ -80,7 +85,7 @@ const PROJECTS = [
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+    <h3 class="text-2xl font-bold  dark:text-gray-100">
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
@@ -97,7 +102,7 @@ const PROJECTS = [
           ))}
         </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <div class="mt-2  dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>

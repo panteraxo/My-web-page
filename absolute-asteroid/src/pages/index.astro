@@ -19,7 +19,7 @@ import Form from '../components/Form.astro';
 
 <Layout title="Porfolio de Maki - Desarrollador y Programador de software" description="Contacta conmigo para obtener grandes beneficios como desarrollador de software">
 	<main class="px-4">
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-72 pb-36">
 			<img 
 				src="../../public/IMG_20240311_172906.jpg" 
 				alt="mgnx photo"
@@ -47,16 +47,16 @@ import Form from '../components/Form.astro';
 					
 				</nav>
 		</SectionContainer>
-		<SectionContainer id="sobre-mi">
+		<SectionContainer class="py-56 pb-24" id="sobre-mi">
 			<h2
-			  class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+			  class="flex items-center mb-6 text-3xl font-semibold gap-x-8  dark:text-white"
 			>
 			  <ProfileCheck class="size-8" />
 			  Sobre mí
 			</h2>
 			<AboutMe />
 		  </SectionContainer>
-		<SectionContainer class="py-44 pb-24" id="experiencia">
+		<SectionContainer class="py-52 pb-24" id="experiencia">
 			<h2 class="text-2xl text-color2/80 font-semibold mb-6 flex gap-x-3 items-center" >
 				<BriefCase class="size-7 "/>
 				Experiencia laboral
@@ -71,6 +71,10 @@ import Form from '../components/Form.astro';
 			<Projects/>
 		</SectionContainer>
 		<SectionContainer class="py-44 pb-24" id="contacto">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Mail class="size-7 text-color2/80"/>
+				Contacto
+			</h2>
 			<Form/>
 		</SectionContainer>
 	</main>

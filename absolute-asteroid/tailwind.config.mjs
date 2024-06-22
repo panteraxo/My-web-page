@@ -9,6 +9,9 @@ export default {
 				color2:'#7DA0CA',
 				color3:'#C1E8FF',
 				
+			},
+			screens:{
+				'xs': '370px'
 			}
 		},
 	},

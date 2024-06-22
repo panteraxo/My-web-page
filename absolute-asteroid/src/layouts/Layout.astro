@@ -26,13 +26,13 @@ const { description,title } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
-	<body class="relative text-color3 dark:text-white">
+	<body class="relative text-color3 dark:text-white w-full">
 		<div class="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
 		<Header />
 		
 		<slot />
-		<Footer class="w-full"/>
+		<Footer class="w-full "/>
 		<style is:global>
 			:root {
 				color-scheme: light dark;
@@ -50,6 +50,11 @@ const { description,title } = Astro.props;
 				height: 100vh;
 				overscroll-behavior: none;
 			}
+			@media (max-width: 768px) and (min-width: 370px) {
+				.custom-width {
+					width: 480px;
+				}
+				}
 			@media (prefers-reduce-motion: reduce){
 				html{
 					scroll-behavior: auto;
